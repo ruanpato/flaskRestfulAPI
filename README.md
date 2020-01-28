@@ -3,7 +3,7 @@
 [![made-with-python](https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square)](https://www.python.org/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?color=yellow&style=flat-square)](http://commonmark.org)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ruanpato/flaskRestfulAPI?color=blue&style=flat-square)
-![LGTM Grade](https://img.shields.io/lgtm/grade/python/github/ruanpato/flaskRestfulAPI?color=yellow&style=flat-square)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/34d8b551dac24e44891bcf3bc42f2d6c)](https://www.codacy.com/manual/ruanpato/flaskRestfulAPI?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ruanpato/flaskRestfulAPI&amp;utm_campaign=Badge_Grade)
 ![GitHub](https://img.shields.io/github/license/ruanpato/flaskRestfulAPI?color=blue&style=flat-square)  
 
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/alembic?color=yellowgreen&style=flat-square)
