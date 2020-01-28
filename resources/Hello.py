@@ -1,8 +1,8 @@
 from flask_restful import Resource
 
 class Hello(Resource):
-    def get(self):
+    def get():
         return {"message": "Hello, World!"}
 
-    def post(self):
+    def post():
         return {"message": "Hello, World!"}

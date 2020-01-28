@@ -1,4 +1,4 @@
-from ..helpers.Person import Person
+from ..helpers.Person import HelperPerson
 
 import re # regex
 

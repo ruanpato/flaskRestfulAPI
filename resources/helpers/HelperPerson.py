@@ -2,7 +2,7 @@ from Database import Database # Import database connection
 from datetime import datetime # Import datetime lib to convert
 db = Database()
 
-class Person():
+class HelperPerson():
     # @Function: createPerson
     # @Argumens: dict{
     #               name: (string),

@@ -1,4 +1,4 @@
-﻿/* < Inserir Pessoas no Banco > */
+﻿-- < Inserir Pessoas no Banco >
 -- Rafael Cardoso Pinto
 INSERT INTO "Person" ("name", "title", "email", "birthday") VALUES ('Rafael Cardoso Pinto', 'Dr.', 'RafaelCardosoPinto@armyspy.com', '04-03-1977');
 INSERT INTO "Contact" ("id") VALUES (1); -- ID of Rafael Cardoso Pinto
@@ -343,9 +343,9 @@ UPDATE "Person" SET "id_Contact" = 85 WHERE "Person"."id" = 85; -- Refresh Perso
 INSERT INTO "Person"("name", "title", "email", "birthday") VALUES('Gabrielle Souza Martins', 'Ms.', 'GabrielleSouzaMartins@cuvox.de', '09-04-1991);');
 INSERT INTO "Contact" ("id") VALUES (86); -- ID of Gabrielle Souza Martins
 UPDATE "Person" SET "id_Contact" = 86 WHERE "Person"."id" = 86; -- Refresh Person id_Contact
-/* </ Inserir Pessoas no Banco > */
+-- </ Inserir Pessoas no Banco >
 
-/* < Inserir Setores no Banco > */
+-- < Inserir Setores no Banco >
 INSERT INTO "Role" ("description") VALUES ('DGDOC'); -- id == 1
 INSERT INTO "Role" ("description") VALUES ('DC-ER'); -- id == 2
 INSERT INTO "Role" ("description") VALUES ('SETI'); -- id == 3
@@ -354,9 +354,9 @@ INSERT INTO "Role" ("description") VALUES ('PROGESP'); -- id == 5
 INSERT INTO "Role" ("description") VALUES ('DAS'); -- id == 6
 INSERT INTO "Role" ("description") VALUES ('DGDSS'); -- id == 7
 INSERT INTO "Role" ("description") VALUES ('DDS'); -- id == 8
-/* </ Inserir Setores no Banco > */
+-- </ Inserir Setores no Banco >
 
-/* < Inserir Pessoas em Setores no Banco > */
+-- < Inserir Pessoas em Setores no Banco >
 INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(1, 3);
 INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(2, 5);
 INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(2, 6);
@@ -522,4 +522,4 @@ INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(84, 4);
 INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(85, 1);
 INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(86, 6);
 INSERT INTO "Person_Role" ("id_Person", "id_Role") VALUES(86, 7);
-/* </ Inserir Pessoas em Setores no Banco > */
+-- </ Inserir Pessoas em Setores no Banco >
