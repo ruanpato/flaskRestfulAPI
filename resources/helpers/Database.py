@@ -15,7 +15,7 @@ class Database():
     def executeQuery(self, query):
         try:
             fetchQuery = self.connection.execute(query)
-            return fetchQuery
             print "Query successfully executed."
+            return fetchQuery
         except:
             print "Error in: executeQuery"

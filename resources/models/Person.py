@@ -1,4 +1,5 @@
-from ../helpers/Person import Person
+from ..helpers.Person import Person
+
 import re # regex
 
 class Person():
