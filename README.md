@@ -10,11 +10,11 @@
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/flask-marshmallow?color=yellowgreen&style=flat-square)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/marshmallow-sqlalchemy?color=yellowgreen&style=flat-square)
 ![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/psycopg2?color=yellowgreen&style=flat-square)
-![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/Flask?color=yellowgreen&style=flat-square)
-![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/Flask-RESTful?color=yellowgreen&style=flat-square)
-![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/Flask-Script?color=yellowgreen&style=flat-square)
-![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/Flask-Migrate?color=yellowgreen&style=flat-square)
-![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/Flask-SQLAlchemy?color=yellowgreen&style=flat-square)  
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/flask?color=yellowgreen&style=flat-square)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/flask-RESTful?color=yellowgreen&style=flat-square)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/flask-Script?color=yellowgreen&style=flat-square)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/flask-Migrate?color=yellowgreen&style=flat-square)
+![GitHub Pipenv locked dependency version](https://img.shields.io/github/pipenv/locked/dependency-version/ruanpato/flaskRestfulAPI/flask-SQLAlchemy?color=yellowgreen&style=flat-square)  
 
 This directory is a train to build API Restful.
 
