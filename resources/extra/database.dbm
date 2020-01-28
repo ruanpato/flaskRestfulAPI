@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+CAUTION: Do not modify this file unless you know what you are doing.
+         Unexpected results may occur if the code is changed deliberately.
+-->
+<dbmodel pgmodeler-ver="0.9.2" last-position="0,0" last-zoom="1" max-obj-count="8"
+	 default-schema="public" default-owner="postgres">
+<database name="new_database" is-template="false" allow-conns="true">
+</database>
+
+<schema name="public" layer="0" fill-color="#e1e1e1" sql-disabled="true">
+</schema>
+
+<table name="Person" layer="0" collapse-mode="2" max-obj-count="7">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="20" y="40"/>
+	<column name="id" not-null="true"
+	 identity-type="ALWAYS">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="name" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="title">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="email" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="birthday" not-null="true">
+		<type name="date" length="100"/>
+	</column>
+	<constraint name="Person_pk" type="pk-constr" table="public.&quot;Person&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="id_Contact" index="5"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Contact_fk" index="1"/>
+		<object name="Person_uq" index="2"/>
+	</customidxs>
+</table>
+
+<table name="Person_Role" layer="0" collapse-mode="2" max-obj-count="2">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="520" y="40"/>
+
+	<customidxs object-type="column">
+		<object name="id_Person" index="1"/>
+		<object name="id_Role" index="0"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Person_fk" index="0"/>
+	</customidxs>
+</table>
+
+<table name="Role" layer="0" collapse-mode="2" max-obj-count="2">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1060" y="60"/>
+	<column name="id" not-null="true"
+	 identity-type="ALWAYS">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="description" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<constraint name="Role_pk" type="pk-constr" table="public.&quot;Role&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="Person_has_many_Person_Role" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#51d215"
+	 src-table="public.&quot;Person&quot;"
+	 dst-table="public.&quot;Person_Role&quot;"
+	 src-required="false" dst-required="false"/>
+
+<relationship name="Role_has_many_Person_Role" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#56250e"
+	 src-table="public.&quot;Role&quot;"
+	 dst-table="public.&quot;Person_Role&quot;"
+	 src-required="false" dst-required="false"/>
+
+<table name="Contact" layer="0" collapse-mode="2" max-obj-count="1">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="20" y="380"/>
+	<column name="id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<constraint name="Contact_pk" type="pk-constr" table="public.&quot;Contact&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="Person_has_one_Contact" type="rel11" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#23a608"
+	 src-table="public.&quot;Contact&quot;"
+	 dst-table="public.&quot;Person&quot;"
+	 src-required="false" dst-required="false"/>
+
+<table name="Address" layer="0" collapse-mode="2" max-obj-count="7">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="500" y="340"/>
+	<column name="id" not-null="true"
+	 identity-type="ALWAYS">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="street_number" not-null="true">
+		<type name="varchar" length="45"/>
+	</column>
+	<column name="street_name" not-null="true">
+		<type name="varchar" length="255"/>
+	</column>
+	<column name="zip_code" not-null="true">
+		<type name="varchar" length="45"/>
+	</column>
+	<constraint name="Address_pk" type="pk-constr" table="public.&quot;Address&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="id_City" index="5"/>
+		<object name="id_Contact" index="4"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="City_fk" index="2"/>
+		<object name="Contact_fk" index="1"/>
+	</customidxs>
+</table>
+
+<relationship name="Contact_has_many_Address" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#7b8cd4"
+	 src-table="public.&quot;Contact&quot;"
+	 dst-table="public.&quot;Address&quot;"
+	 src-required="false" dst-required="false"/>
+
+<table name="City" layer="0" collapse-mode="2" max-obj-count="3">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="940" y="400"/>
+	<column name="id" not-null="true"
+	 identity-type="ALWAYS">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="name" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<constraint name="city_pk" type="pk-constr" table="public.&quot;City&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+
+	<customidxs object-type="column">
+		<object name="id_Country" index="2"/>
+	</customidxs>
+
+	<customidxs object-type="constraint">
+		<object name="Country_fk" index="1"/>
+	</customidxs>
+</table>
+
+<relationship name="city_has_many_Address" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#0aa1e5"
+	 src-table="public.&quot;City&quot;"
+	 dst-table="public.&quot;Address&quot;"
+	 src-required="false" dst-required="false"/>
+
+<table name="Country" layer="0" collapse-mode="2" max-obj-count="2">
+	<schema name="public"/>
+	<role name="postgres"/>
+	<position x="1340" y="420"/>
+	<column name="id" not-null="true">
+		<type name="integer" length="0"/>
+	</column>
+	<column name="name" not-null="true">
+		<type name="varchar" length="100"/>
+	</column>
+	<constraint name="country_pk" type="pk-constr" table="public.&quot;Country&quot;">
+		<columns names="id" ref-type="src-columns"/>
+	</constraint>
+</table>
+
+<relationship name="country_has_many_city" type="rel1n" layer="0"
+	 src-col-pattern="{sc}_{st}"
+	 pk-pattern="{dt}_pk" uq-pattern="{dt}_uq"
+	 src-fk-pattern="{st}_fk"
+	 custom-color="#0ffccd"
+	 src-table="public.&quot;Country&quot;"
+	 dst-table="public.&quot;City&quot;"
+	 src-required="false" dst-required="false"/>
+
+</dbmodel>
