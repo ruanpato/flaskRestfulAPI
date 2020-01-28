@@ -1,5 +1,6 @@
 # Flask API Restful [:link:](https://github.com/ruanpato/flaskRestfulAPI) #
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/43846f1b05a945c4acb44a4afd1b4cc4)](https://app.codacy.com/manual/ruanpato/flaskRestfulAPI?utm_source=github.com&utm_medium=referral&utm_content=ruanpato/flaskRestfulAPI&utm_campaign=Badge_Grade_Dashboard)
 [![made-with-python](https://img.shields.io/badge/made%20with-python-blue.svg?style=flat-square)](https://www.python.org/)
 [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg?color=yellow&style=flat-square)](http://commonmark.org)
 ![GitHub repo size](https://img.shields.io/github/repo-size/ruanpato/flaskRestfulAPI?color=blue&style=flat-square)
